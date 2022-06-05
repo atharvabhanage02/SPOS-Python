@@ -1,0 +1,8 @@
+    START 100 
+XYZ MOVER AREG A 
+    MOVEM BREG ='1'
+    ADD CREG B
+    SUB DREG ='2'
+A   DC 10
+B   DS 50
+    END
