@@ -17,6 +17,8 @@ for line in mdtf:
 for line in mntf:
     MNT.append(line.split())
 
+print("****** PASS 2 OUTPUT ******")
+
 def mdt_lines(MDTP):
     for x in MDT:
         if MDTP == int(x[0]):
@@ -30,6 +32,7 @@ def mdt_lines(MDTP):
                         if str(j[0]) in lines:
                             lines = lines.replace(x[3], j[1])
                 out.write(lines + "\n")
+                print(lines)
                 MDTP += 1
 
 for line in f:
@@ -45,6 +48,7 @@ for line in f:
             mdt_lines(MDTC)
             line = ""
     out.write(line)
+    print(line)
 
 alatab = open("pass2_ala.txt","w")
 for x in ALA:
